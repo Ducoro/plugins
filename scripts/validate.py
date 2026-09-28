@@ -79,7 +79,10 @@ def validate(root):
             require(len(parts) == 3 and not parts[0].strip(), f'{skill}: missing YAML frontmatter')
             require(re.search(rf'^name:\s*{re.escape(skill.name)}\s*$', parts[1], re.M),
                     f'{skill}: frontmatter name must match directory')
-            require(re.search(r'^description:\s*\S.+$', parts[1], re.M), f'{skill}: description is required')
+            description = re.search(r'^description:[ \t]*(\S[^\r\n]*)$', parts[1], re.M)
+            require(description, f'{skill}: description is required')
+            require(len(description[1].encode('utf-16-le')) // 2 <= 300,
+                    f'{skill}: description must fit the 300 UTF-16-unit injection limit')
             require(parts[2].strip(), f'{skill}: instructions are required')
             require((skill / 'agents/openai.yaml').is_file(), f'{skill}: discovery metadata is required')
         for readme in readmes:

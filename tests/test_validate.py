@@ -78,6 +78,10 @@ class CatalogValidationTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             validator.validate(self.root)
         skill.write_text(original)
+        skill.write_text(original.replace('description:', 'description: ' + 'x' * 301))
+        with self.assertRaises(ValueError):
+            validator.validate(self.root)
+        skill.write_text(original)
         readme = self.root / 'README.zh-CN.md'
         readme.write_text(readme.read_text().replace('(plugins/docs-lookup)', '(plugins/missing)'))
         with self.assertRaises(ValueError):

@@ -9,7 +9,7 @@ Open an issue for a new plugin or a substantial behavior change. Explain the tas
 ## Plugin contract
 
 1. Create `plugins/<name>/.codex-plugin/plugin.json` with a stable lowercase, hyphenated name, a semantic version, a description, `license: "Apache-2.0"`, and `skills: "./skills/"`.
-2. Put each skill in `skills/<skill-name>/SKILL.md`. Its YAML frontmatter declares `name` and `description`. Explain prerequisites, the workflow, observable completion, and failure handling in English.
+2. Put each skill in `skills/<skill-name>/SKILL.md`. Its YAML frontmatter declares `name` and a single-line `description` of at most 300 UTF-16 code units, matching Ducoro’s skill-index injection limit. Explain prerequisites, the workflow, observable completion, and failure handling in English.
 3. Put discovery metadata in `skills/<skill-name>/agents/openai.yaml`. Declare required connectors under `dependencies.tools`. Keep secrets and machine-specific paths out of the bundle.
 4. Add a local entry to the root `marketplace.json`, using `./plugins/<name>` as its source path. Keep the marketplace entry name and plugin manifest name identical.
 5. Update both README catalogs when adding, removing, or materially changing a plugin. English is the default documentation language; the root README links to Simplified Chinese.
