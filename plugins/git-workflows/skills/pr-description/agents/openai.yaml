@@ -1,0 +1,7 @@
+interface:
+  display_name: 'PR Description'
+  short_description: 'Reviewer-ready pull-request descriptions'
+  brand_color: '#D97706'
+  default_prompt: 'Use $pr-description to describe this branch for review.'
+policy:
+  allow_implicit_invocation: true

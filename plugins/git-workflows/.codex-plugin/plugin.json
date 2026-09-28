@@ -1,0 +1,27 @@
+{
+  "name": "git-workflows",
+  "version": "1.0.0",
+  "description": "Write AI-readable commit messages and actionable pull-request descriptions.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "git",
+    "commit",
+    "pull-request"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Git Workflows",
+    "shortDescription": "AI-readable commits and actionable PR descriptions",
+    "longDescription": "Two writing playbooks for everyday engineering hygiene: conventional commit messages that name and describe coherent staged changes, and pull-request descriptions a reviewer can act on without reading the diff first.",
+    "developerName": "Ducoro",
+    "category": "Developer Tools",
+    "brandColor": "#D97706",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Write a commit message for my staged changes."
+    ],
+    "websiteURL": "https://github.com/ducoro/plugins"
+  }
+}

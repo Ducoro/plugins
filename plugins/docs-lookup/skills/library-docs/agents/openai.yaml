@@ -1,0 +1,10 @@
+interface:
+  display_name: 'Library Docs'
+  short_description: 'Version-accurate library docs on demand'
+  brand_color: '#6E56CF'
+  default_prompt: 'Use $library-docs to check how server actions are declared in the current Next.js.'
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - context7

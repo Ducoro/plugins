@@ -1,0 +1,27 @@
+{
+  "name": "docs-lookup",
+  "version": "1.0.0",
+  "description": "Look up current, version-accurate library and framework documentation instead of answering from memory.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "documentation",
+    "libraries",
+    "context7"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Docs Lookup",
+    "shortDescription": "Version-accurate library docs on demand",
+    "longDescription": "A lookup playbook over the Context7 connector: resolve the library, query its current documentation, and answer API / configuration / migration questions with sources \u2014 training-data memory is not trusted for library specifics.",
+    "developerName": "Ducoro",
+    "category": "Research",
+    "brandColor": "#6E56CF",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "How do I configure incremental static regeneration in the current Next.js?"
+    ],
+    "websiteURL": "https://github.com/ducoro/plugins"
+  }
+}

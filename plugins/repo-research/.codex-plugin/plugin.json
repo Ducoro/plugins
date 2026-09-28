@@ -1,0 +1,27 @@
+{
+  "name": "repo-research",
+  "version": "1.0.0",
+  "description": "Research any public GitHub repository through its AI-generated wiki: structure first, then targeted questions.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "github",
+    "research",
+    "deepwiki"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Repo Research",
+    "shortDescription": "Understand an unfamiliar GitHub repo fast",
+    "longDescription": "A research playbook over the DeepWiki connector: map a repository's documentation structure, read the relevant topics, and ask targeted questions \u2014 instead of cloning and grepping blindly.",
+    "developerName": "Ducoro",
+    "category": "Research",
+    "brandColor": "#356CF9",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Research the repo facebook/react: what is its overall architecture?"
+    ],
+    "websiteURL": "https://github.com/ducoro/plugins"
+  }
+}

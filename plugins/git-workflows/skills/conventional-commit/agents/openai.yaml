@@ -1,0 +1,7 @@
+interface:
+  display_name: 'Conventional Commit'
+  short_description: 'AI-readable names and descriptions for staged changes'
+  brand_color: '#D97706'
+  default_prompt: 'Use $conventional-commit to write a message for my staged changes.'
+policy:
+  allow_implicit_invocation: true

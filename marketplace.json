@@ -1,0 +1,32 @@
+{
+  "name": "ducoro",
+  "interface": {
+    "displayName": "Ducoro Plugins"
+  },
+  "plugins": [
+    {
+      "name": "repo-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/repo-research"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "docs-lookup",
+      "source": {
+        "source": "local",
+        "path": "./plugins/docs-lookup"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "git-workflows",
+      "source": {
+        "source": "local",
+        "path": "./plugins/git-workflows"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

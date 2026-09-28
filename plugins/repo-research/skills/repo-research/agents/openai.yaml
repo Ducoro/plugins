@@ -1,0 +1,10 @@
+interface:
+  display_name: 'Repo Research'
+  short_description: 'Understand an unfamiliar GitHub repo fast'
+  brand_color: '#356CF9'
+  default_prompt: 'Use $repo-research to explain the architecture of facebook/react.'
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - deepwiki
