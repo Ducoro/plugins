@@ -18,16 +18,15 @@
 
 ## 在 Ducoro 中使用
 
-把 `ducoro/plugins` 添加为 GitHub 插件来源。在「插件 → 发现」中打开该来源，核对插件内容与许可证后安装。
+Ducoro 自动登记并保留这个官方来源。在「插件 → 发现 → 官方」中打开它，核对插件内容与许可证后安装。
 
 也可以使用 Ducoro CLI：
 
 ```sh
-ducoro-cli plugin marketplace add ducoro/plugins --slug ducoro-official
 ducoro-cli plugin browse --marketplace ducoro-official --json
 ```
 
-如果该来源已经登记，请通过 `ducoro-cli plugin marketplace list --json` 查出已有的 slug 并使用它。核对插件内容和许可证后，可以让 Agent 安装；安装使用本次浏览结果返回的 review token。
+来源名称固定保留为 `ducoro-official`。核对插件内容和许可证后，可以让 Agent 安装；安装使用本次浏览结果返回的 review token。
 
 立即检查更新：
 

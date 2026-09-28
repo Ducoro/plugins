@@ -18,16 +18,15 @@ Connectors are configured separately in Ducoro. The skills explain which connect
 
 ## Use in Ducoro
 
-Add `ducoro/plugins` as a GitHub plugin source. Open the source in **Plugins → Discover**, review a plugin's contents and license, then install it.
+Ducoro registers this repository automatically as its permanent official source. Open **Plugins → Discover → Official**, review a plugin's contents and license, then install it.
 
 With the Ducoro CLI:
 
 ```sh
-ducoro-cli plugin marketplace add ducoro/plugins --slug ducoro-official
 ducoro-cli plugin browse --marketplace ducoro-official --json
 ```
 
-If this source is already registered, use its existing slug from `ducoro-cli plugin marketplace list --json` instead of adding it again. Ask an agent to install a plugin after you have reviewed its contents and license; installation uses the review token returned by the current browse response.
+The source name is reserved as `ducoro-official`. Ask an agent to install a plugin after you have reviewed its contents and license; installation uses the review token returned by the current browse response.
 
 To check for updates now:
 
